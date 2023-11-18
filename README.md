@@ -1,1 +1,1 @@
-# zhihu_force_dark
+# 强制开启网页端知乎深色模式
