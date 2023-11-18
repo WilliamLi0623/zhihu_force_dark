@@ -26,14 +26,15 @@
   }
 
   function switchTheme() {
-    if (firstRun) {
-      const isZhihuDark = isDark()
-      const theme = 'dark'
-      setTheme(theme)
+    const isZhihuDark = isDark()
+    const theme = 'dark'
+    if(!isZhihuDark) {
+      if(!firstRun) {
+        setTheme(theme)
+      }
       setRootTheme(theme)
-      firstRun = false
-      return
     }
+    firstRun = false
   }
 
   switchTheme()
